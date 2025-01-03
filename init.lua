@@ -14,3 +14,9 @@ hs.hotkey.bind({"cmd", "alt"}, "X", function() return launchOrFocus("Xcode") end
 -- Paste clipboard contents by typing for those pesky apps that don't allow pasting
 hs.hotkey.bind({"cmd", "alt"}, "V", function() hs.eventtap.keyStrokes(hs.pasteboard.getContents()) end)
 
+-- Example handling for URL events
+-- try: open -g "hammerspoon://someAlert?foo=bar" in terminal
+hs.urlevent.bind("someAlert", function(eventName, params)
+    hs.alert.show("Received someAlert with params: " .. hs.inspect(params)) 
+end)
+
