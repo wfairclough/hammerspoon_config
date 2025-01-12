@@ -1,4 +1,4 @@
-Install:andUse("MicMute", { start = true })
+Install:andUse("MicMute")
 -- MicMute
 spoon.MicMute:bindHotkeys({
 	toggle = { { "cmd", "alt" }, "M" },
