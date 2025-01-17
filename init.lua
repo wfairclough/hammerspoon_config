@@ -56,6 +56,7 @@ require("app-switcher")
 require("chrome")
 require("clipboard")
 require("mic")
+require("super-keys")
 require("web-mode")
 require("window-mgmt")
 
