@@ -5,9 +5,11 @@ local appLauncher = hs.loadSpoon("AppLauncher") or error("AppLauncher spoon coul
 local mappings = {
   A = "Arc Canary",
 	-- B = "Google Chrome",
+	C = "Cursor",
 	D = "Dia",
 	F = "Finder",
 	H = "Hammerspoon",
+	I = "Raycast",
 	L = "Linear",
 	M = "Messages",
 	N = "Notion",
@@ -21,5 +23,11 @@ local mappings = {
 mappings["1"] = "1Password"
 appLauncher.modifiers = HYPER
 appLauncher:bindHotkeys(mappings)
+
+
+-- HYPER + O should do a CMD + Tab equivalent
+hs.hotkey.bind(HYPER, "O", function()
+  hs.eventtap.keyStroke({"cmd"}, "tab")
+end)
 
 print("AppLauncher loaded")

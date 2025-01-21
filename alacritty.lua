@@ -26,4 +26,6 @@ bindTmuxKey("6")
 bindTmuxKey("7")
 bindTmuxKey("8")
 bindTmuxKey("9")
+bindTmuxKey("c")
+bindTmuxKey("x")
 

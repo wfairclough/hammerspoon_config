@@ -17,7 +17,7 @@ hs.hotkey.bind({ "leftcmd", "leftalt" }, "up", function()
 end)
 
 -- HYPER+C to recenter focused window in current screen
-hs.hotkey.bind(HYPER, "C", function()
+hs.hotkey.bind(HYPER, "-", function()
   local win = hs.window.focusedWindow()
   if not win then
     return
