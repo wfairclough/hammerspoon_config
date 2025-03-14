@@ -1,17 +1,19 @@
-log = hs.logger.new('main', 'info')
+log = hs.logger.new("main", "info")
 HYPER = { "cmd", "alt", "ctrl", "shift" }
 -- HYPER = { "rcmd", "ralt" }
 
 hs.loadSpoon("SpoonInstall")
 spoon.SpoonInstall.use_syncinstall = true
-Install=spoon.SpoonInstall
+Install = spoon.SpoonInstall
 
 hs.hotkey.bind(HYPER, "R", function()
 	hs.reload()
-  hs.notify.new({
-    title="Hammerspoon",
-    informativeText="Reloaded Config",
-  }):send()
+	hs.notify
+		.new({
+			title = "Hammerspoon",
+			informativeText = "Reloaded Config",
+		})
+		:send()
 end)
 
 -- Example handling for URL events
@@ -47,7 +49,6 @@ end)
 -- TheAppWatcher = hs.application.watcher.new(function(name,event, app) Appwatch(name,event,app) end)
 -- TheAppWatcher:start()
 
-
 -- INIT
 
 require("alacritty")
@@ -61,4 +62,3 @@ require("web-mode")
 require("window-mgmt")
 
 --
-

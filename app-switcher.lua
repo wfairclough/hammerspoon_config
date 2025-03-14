@@ -24,7 +24,6 @@ mappings["1"] = "1Password"
 appLauncher.modifiers = HYPER
 appLauncher:bindHotkeys(mappings)
 
-
 -- HYPER + O should do a CMD + Tab equivalent
 hs.hotkey.bind(HYPER, "O", function()
   hs.eventtap.keyStroke({"cmd"}, "tab")

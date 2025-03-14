@@ -51,5 +51,5 @@ BluetoothWatcher = hs.timer.doEvery(10, function()
 end)
 
 -- Start the watcher
-BluetoothWatcher:start()
+-- BluetoothWatcher:start()
 print("Bluetooth Watcher started")
