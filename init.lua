@@ -120,5 +120,6 @@ require("mic")
 require("super-keys")
 require("web-mode")
 require("window-mgmt")
+require("notifications")
 
 --
