@@ -19,8 +19,8 @@ local function copyCurrentChromeUrl()
     hs.alert.show(currentChromeUrl)
 end
 
--- Sequential keybindings, e.g. Hyper-Q,J for Jira
-local webMode = hs.hotkey.modal.new(HYPER, 'q') --- enter the web mode
+-- Sequential keybindings, e.g. Hyper-W,J for Jira
+local webMode = hs.hotkey.modal.new(HYPER, 'w') --- enter the web mode
 local webModeRunning = false;
 function webMode:entered()
     local function alertAndAutoClose ()

@@ -15,8 +15,8 @@ local function clearNotificationBanners()
     local startX = screenFrame.x + screenFrame.w - 300  -- Start swipe from middle of notification
     local startY = screenFrame.y + 50  -- First notification position
     
-    -- Swipe away 2 notifications
-    for i = 0, 1 do
+    -- Swipe away 2 notifications (bottom to top)
+    for i = 1, 0, -1 do
         local y = startY + (i * 80)  -- Notifications are spaced ~80px apart
         
         -- Position mouse at start of swipe

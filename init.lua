@@ -119,7 +119,7 @@ require("clipboard")
 require("email-shortcut")
 require("mic")
 require("super-keys")
-require("web-mode")
+-- require("web-mode")
 require("window-mgmt")
 require("notifications")
 
